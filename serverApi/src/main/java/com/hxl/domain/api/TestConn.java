@@ -6,7 +6,7 @@ package com.hxl.domain.api;
 public interface TestConn {
 
     /**
-     * 心跳
+     * 心跳接口
      * @param str
      * @return String
      */
