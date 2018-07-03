@@ -17,7 +17,7 @@
     <context:annotation-config/>
     <mvc:annotation-driven/>
     <!-- <aop:aspectj-autoproxy/> -->
-    <mvc:resources mapping="/resources/**" location="/resources/"/>
+    <mvc:resources mapping="/resources/**" location="/comm/"/>
     <mvc:resources mapping="/images/**" location="/images/"/>
     <mvc:resources mapping="/js/**" location="/js/"/>
     <!-- 引入配置文件 -->

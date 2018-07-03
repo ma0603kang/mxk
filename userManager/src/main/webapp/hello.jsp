@@ -13,6 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>后台大布局</title>
     <link rel="stylesheet" href="${path}/comm/js/layui/css/layui.css">
+    <script src="${path}/comm/js/layui/layui.js"></script>
+    <script>
+        //JavaScript代码区域
+        layui.use('element', function(){
+            var element = layui.element;
+
+        });
+    </script>
 </head>
 <body class="layui-layout-body">
 <div class="layui-layout layui-layout-admin">
@@ -76,21 +84,16 @@
 
     <div class="layui-body">
         <!-- 内容主体区域 -->
-        <div style="padding: 15px;">内容主体区域</div>
+        <div style="padding: 2px;">
+            <iframe id="iframe" src="${path}/admin/main/index.jsp" frameborder="0" class="on" height="99.5%" width="100%" ></iframe>
+        </div>
+
     </div>
 
     <div class="layui-footer">
         <!-- 底部固定区域 -->
         © layui.com - 底部固定区域
     </div>
-    <script src="${path}/comm/js/layui/layui.js"></script>
-    <script>
-        //JavaScript代码区域
-        layui.use('element', function(){
-            var element = layui.element;
-
-        });
-    </script>
 </div>
 </body>
 </html>
