@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="financeManager" />
+        <module name="operatorManager" />
+        <module name="serverApi" />
+        <module name="userManager" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="financeManager" target="1.7" />
+      <module name="hxl" target="1.7" />
+      <module name="operatorManager" target="1.7" />
+      <module name="serVerApi" target="1.8" />
+      <module name="serverApi" target="1.7" />
+      <module name="userManager" target="1.7" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

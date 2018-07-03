@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/financeManager/financeManager.iml" filepath="$PROJECT_DIR$/financeManager/financeManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/hxl.iml" filepath="$PROJECT_DIR$/hxl.iml" />
+      <module fileurl="file://$PROJECT_DIR$/operatorManager/operatorManager.iml" filepath="$PROJECT_DIR$/operatorManager/operatorManager.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serverApi/serverApi.iml" filepath="$PROJECT_DIR$/serverApi/serverApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/userManager/userManager.iml" filepath="$PROJECT_DIR$/userManager/userManager.iml" />
+    </modules>
+  </component>
+</project>
