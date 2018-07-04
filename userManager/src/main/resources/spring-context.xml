@@ -16,10 +16,13 @@
     <context:component-scan base-package="com.hxl"/>
     <context:annotation-config/>
     <mvc:annotation-driven/>
-    <!-- <aop:aspectj-autoproxy/> -->
-    <mvc:resources mapping="/resources/**" location="/comm/"/>
-    <mvc:resources mapping="/images/**" location="/images/"/>
-    <mvc:resources mapping="/js/**" location="/js/"/>
+    <!-- 资源映射 -->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/images/" mapping="/images/**"/>
+    <mvc:resources location="/layui/" mapping="/layui/**"/>
+    <mvc:resources location="/json/" mapping="/json/**"/>
+    <mvc:resources location="/WEB-INF/page/" mapping="/page/**"/>
     <!-- 引入配置文件 -->
     <bean id="propertyConfigurer"
           class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">

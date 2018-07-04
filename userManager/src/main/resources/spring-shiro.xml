@@ -86,6 +86,7 @@ http://www.springframework.org/schema/tx/spring-tx.xsd">
              -->
 			<value>
 				/css/**=anon
+				/images/**=anon
 				/js/**=anon
 				/layui/**=anon
 				/sys/vcode=anon

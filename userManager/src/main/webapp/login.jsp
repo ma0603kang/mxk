@@ -8,8 +8,8 @@
     <title>登录--后台管理</title>
     <link rel="stylesheet" href="${ctx }/layui/css/layui.css" media="all" />
     <link rel="stylesheet" href="${ctx }/css/login.css" media="all" />
-    <script>  
-        var ctx = "${ctx}";  
+    <script>
+        ctx = "${ctx}";
     </script>
     <script type="text/javascript">
         if(window !=top){
@@ -17,7 +17,7 @@
         }
     </script>
 </head>
-<body>
+<>
 
 
 <div class="video_mask"></div>
@@ -39,5 +39,5 @@
 </div>
 <script type="text/javascript" src="${ctx }/layui/layui.js"></script>
 <script type="text/javascript" src="${ctx }/js/login.js"></script>
-</body>
+</>
 </html>

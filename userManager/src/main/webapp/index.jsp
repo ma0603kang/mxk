@@ -16,6 +16,7 @@
 	<meta name="format-detection" content="telephone=no">
 	<link rel="icon" href="favicon.ico">
 	<link rel="stylesheet" href="${ctx }/layui/css/layui.css" media="all" />
+	<%--此处后续需要将字体下载到工程中，暂时不改--%>
 	<link rel="stylesheet" href="//at.alicdn.com/t/font_tnyc012u2rlwstt9.css" media="all" />
 	<link rel="stylesheet" href="${ctx }/css/main.css" media="all" />
 	<script>  

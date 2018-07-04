@@ -5,6 +5,7 @@
          xmlns="http://java.sun.com/xml/ns/j2ee"
          xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd"
          version="2.4">
+  <!--监控配置-->
   <filter>
     <filter-name>DruidWebStatFilter</filter-name>
     <filter-class>com.alibaba.druid.support.http.WebStatFilter</filter-class>
@@ -83,9 +84,6 @@
       org.springframework.web.context.request.RequestContextListener
     </listener-class>
   </listener>
-
-
-
   <!-- 配置springmvc -->
   <servlet>
     <servlet-name>springMVC</servlet-name>
