@@ -1,6 +1,6 @@
 package com.hxl.common;
 
-import com.hxl.structure.dao.CodeInit.CodeValueDao;
+import com.hxl.structure.mapper.CodeValueDao;
 import com.hxl.util.Constant;
 import com.hxl.util.MapUtil;
 import org.springframework.beans.BeansException;
@@ -15,6 +15,7 @@ import javax.servlet.ServletContextListener;
 import java.util.List;
 import java.util.Map;
 
+@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Component
 public class ApplicationInit implements ServletContextListener,ApplicationContextAware {
 
@@ -26,7 +27,6 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	/**
 	 *
 	 */
-	@SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 	@Autowired
 	public CodeValueDao codeValueDao;
 
@@ -49,8 +49,8 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
-		List<Map<Object, Object>> list = codeValueDao.initAllCodeValue();
-		gloabJson = MapUtil.covertMaptoJson(list);
+		//List<Map<Object, Object>> list = codeValueDao.initAllCodeValue();
+		//gloabJson = MapUtil.covertMaptoJson(list);
 
 		}
 	

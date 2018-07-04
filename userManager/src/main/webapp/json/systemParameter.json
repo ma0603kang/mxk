@@ -1,0 +1,8 @@
+{
+    "version": "v1.0.0",
+    "author": "isduxd@163.com",
+    "homePage": "index.jsp",
+    "server": "Linux+Nginx+Tomcat",
+    "dataBase": "MySQL5.5",
+    "maxUpload": "5M"
+}

@@ -108,13 +108,13 @@ public class MapUtil {
 			map2 = (Map<Object, Object>) list.get(i);
 			try {
 				// 当前Map中存在同类型码值。
-				if (map3.containsKey(map2.get("TYPECODE"))) {
-					map3.get(map2.get("TYPECODE")).add(map2);
+				if (map3.containsKey(map2.get("typecode"))) {
+					map3.get(map2.get("typecode")).add(map2);
 				} else { 
-				// 当前容器中国不存在同类型码值。
+				// 当前容器中不存在同类型码值。
 					List<Map<Object, Object>> list3 = new ArrayList<Map<Object, Object>>();
 					list3.add(map2);
-					map3.put((String) map2.get("TYPECODE"), list3);
+					map3.put((String) map2.get("typecode"), list3);
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
