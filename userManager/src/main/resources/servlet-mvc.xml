@@ -63,9 +63,29 @@
         </property>
     </bean>
    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver">  
-        <property name="prefix" value="/"/>  
+        <property name="prefix" value="/WEB-INF/"/>
         <property name="suffix" value=".jsp"/>  
-    </bean>  
+    </bean>
+
+    <!-- 资源映射 -->
+    <mvc:resources location="/css/" mapping="/css/**"/>
+    <mvc:resources location="/js/" mapping="/js/**"/>
+    <mvc:resources location="/layui/" mapping="/layui/**"/>
+    <mvc:resources location="/json/" mapping="/json/**"/>
+    <mvc:resources location="/WEB-INF/page/" mapping="/page/**"/>
+    <!-- 开启shiro注解支持 -->
+    <bean
+            class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>
+    <bean class="org.springframework.web.servlet.handler.SimpleMappingExceptionResolver">
+        <property name="exceptionMappings">
+            <props>
+                <prop key="org.apache.shiro.authz.AuthorizationException">redirect:/sys/401</prop>
+                <prop key="org.apache.shiro.authz.UnauthorizedException">redirect:/sys/refuse</prop>
+            </props>
+        </property>
+    </bean>
     
 </beans>
  
