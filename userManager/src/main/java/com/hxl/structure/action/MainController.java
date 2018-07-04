@@ -13,6 +13,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * 首页面
+ */
 @Controller
 @RequestMapping("main/")
 public class MainController {

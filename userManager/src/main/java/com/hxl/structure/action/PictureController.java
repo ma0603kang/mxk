@@ -20,6 +20,9 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 
+/**
+ * 图片处理控制
+ */
 @Controller
 public class PictureController {
 	

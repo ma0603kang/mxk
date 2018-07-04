@@ -14,6 +14,9 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * 用户管理
+ */
 @Controller
 @RequestMapping("user/")
 public class UserManagementController {

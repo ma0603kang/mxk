@@ -27,6 +27,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.awt.image.BufferedImage;
 import java.util.List;
 
+/**
+ * 管理员控制类
+ */
 @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Controller
 @RequestMapping("sys")

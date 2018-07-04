@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 
+/**
+ * 普通账户控制
+ */
 @Controller
 @RequestMapping("account/")
 public class AccountController {

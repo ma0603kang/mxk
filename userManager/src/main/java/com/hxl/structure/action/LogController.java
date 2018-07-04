@@ -10,6 +10,11 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 
+/**
+ * 日志
+ * @author Mr Ma
+ * @createrTime 2018-05-25
+ */
 @Controller
 @RequestMapping("log/")
 public class LogController {
