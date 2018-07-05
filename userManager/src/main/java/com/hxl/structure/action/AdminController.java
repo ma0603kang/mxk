@@ -73,8 +73,9 @@ public class AdminController {
 		}
 		
 		try{
-			System.out.println("测试jireb动态加载");
+
 			Subject subject = ShiroUtils.getSubject();
+
 			//md5加密
 			//password=DigestUtils.md5DigestAsHex(password.getBytes());
 			UsernamePasswordToken token = new UsernamePasswordToken(username, password);
@@ -107,7 +108,6 @@ public class AdminController {
 
 	/**
 	 * 登出
-	 * @param req
 	 * @return
 	 */
 	@RequestMapping(value="/loginOut")
@@ -164,7 +164,7 @@ public class AdminController {
 	public String adminList() {
 		return "page/admin/adminList";
 	}
-	
+
 	@RequestMapping("/menuList")
 	public String menuList() {
 		return "page/admin/menuList";

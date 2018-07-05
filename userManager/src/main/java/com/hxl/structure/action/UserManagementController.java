@@ -20,7 +20,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 @Controller
 @RequestMapping("user/")
 public class UserManagementController {
-	
+
 	@Autowired
 	private UserService userServiceImpl;
 	
@@ -79,7 +79,7 @@ public class UserManagementController {
 			userServiceImpl.insUserService(user);
 			return ResultUtil.ok();
 		} catch (Exception e) {
-			//e.printStackTrace();
+			e.printStackTrace();
 			return new ResultUtil(502,"邮件发送错误，请检查邮箱！");
 		}
 	}

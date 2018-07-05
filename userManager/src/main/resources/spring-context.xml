@@ -106,14 +106,13 @@
     </bean>
 
     <!-- 自定义解析property文件 -->
-   <!-- <bean id="propertyConfigurer1" class="com.hxl.util.PropertyPlaceholder">
+    <bean id="propertyConfigurer1" class="com.hxl.util.PropertyPlaceholder">
         <property name="locations">
             <list>
-                <value>classpath:operawsdl.properties</value>
-                <value>classpath:redis-config.properties</value>
+                <value>classpath:global.properties</value>
             </list>
 
         </property>
-    </bean>-->
+    </bean>
 
 </beans>

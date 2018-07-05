@@ -2,16 +2,14 @@ package com.hxl.structure.action;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 import java.util.Random;
 import java.util.UUID;
 
 import javax.servlet.http.HttpServletRequest;
 
-import com.hxl.util.GlobalUtil;
+import com.hxl.util.PropertyPlaceholder;
 import com.hxl.util.ResultUtil;
 import org.springframework.http.MediaType;
 import org.springframework.stereotype.Controller;
@@ -38,14 +36,14 @@ public class PictureController {
 			String img = UUID.randomUUID().toString().replace("-", "")+""+d.nextInt(10000)+""+fileSub;
 			try {
 //				uploadFile.transferTo(new File(req.getServletContext().getRealPath("WEB-INF/upload"),img));
-				file.transferTo(new File(GlobalUtil.getValue("upfile.path"),img));
+				file.transferTo(new File((String) PropertyPlaceholder.getProperty("upfile.path"),img));
 			} catch (IllegalStateException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			Map<String,String> map=new HashMap<>();
-			map.put("src",GlobalUtil.getValue("upfile.code")+img);
+			map.put("src",(String) PropertyPlaceholder.getProperty("upfile.code")+img);
 			return ResultUtil.ok(map);
 		}else{
 			return ResultUtil.error("文件格式不支持,请重新选择！");
@@ -63,14 +61,14 @@ public class PictureController {
 			String img = UUID.randomUUID().toString().replace("-", "")+""+d.nextInt(10000)+""+fileSub;
 			try {
 //				uploadFile.transferTo(new File(req.getServletContext().getRealPath("WEB-INF/upload"),img));
-				uploadFile.transferTo(new File(GlobalUtil.getValue("upfile.path"),img));
+				uploadFile.transferTo(new File((String) PropertyPlaceholder.getProperty("upfile.path"),img));
 			} catch (IllegalStateException e) {
 				e.printStackTrace();
 			} catch (IOException e) {
 				e.printStackTrace();
 			}
 			Map<String,String> map=new HashMap<>();
-			map.put("src",GlobalUtil.getValue("upfile.code")+img);
+			map.put("src",(String) PropertyPlaceholder.getProperty("upfile.code")+img);
 			return ResultUtil.ok(map);
 		}else{
 			return ResultUtil.error("文件格式不支持！");
