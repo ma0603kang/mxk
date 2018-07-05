@@ -102,7 +102,7 @@ public class MapUtil {
 		// 原始数据Map。
 		Map<Object, Object> map2 = null;
 		// 新容器。
-		Map<String, List<Map<Object, Object>>> map3 = new ConcurrentHashMap<String, List<Map<Object, Object>>>();
+		Map<Object, List<Map<Object, Object>>> map3 = new ConcurrentHashMap<Object, List<Map<Object, Object>>>();
 
 		for (int i = 0; i < list.size(); i++) {
 			map2 = (Map<Object, Object>) list.get(i);

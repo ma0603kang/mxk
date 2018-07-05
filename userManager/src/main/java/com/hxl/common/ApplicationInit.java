@@ -4,6 +4,8 @@ import com.hxl.common.pojo.TbMenus;
 import com.hxl.structure.mapper.CodeValueMapper;
 import com.hxl.structure.mapper.TbMenusMapper;
 import com.hxl.util.Constant;
+import com.hxl.util.MapUtil;
+import org.apache.commons.collections.MapUtils;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -30,9 +32,6 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	 */
 	@Autowired
 	public CodeValueMapper codeValueDao;
-	@Autowired
-	public TbMenusMapper tbMenusMapper;
-
 	/**
 	 * 关闭服务器时，清空application数据
 	 * @param evt
@@ -52,10 +51,8 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
-		TbMenus TbMenus = tbMenusMapper.selectByPrimaryKey(3l);
 		List<Map<Object, Object>> list = codeValueDao.initAllCodeValue();
-		System.out.println(TbMenus.toString());
-
+		gloabJson = MapUtil.covertMaptoJson(list);
 		}
 	
 	
