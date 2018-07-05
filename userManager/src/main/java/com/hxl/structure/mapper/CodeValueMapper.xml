@@ -2,9 +2,9 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
-<mapper namespace="com.hxl.structure.mapper.CodeValueDao">
+<mapper namespace="com.hxl.structure.mapper.CodeValueMapper">
 
-    <select id="initAllCodeValue" parameterType="Map" resultType="Map">
+    <select id="initAllCodeValue"  resultType="Map">
   		select codeid, typename, typecode, typevalue, codename from t_code_value
     </select>
 

@@ -1,8 +1,9 @@
 package com.hxl.common;
 
-import com.hxl.structure.mapper.CodeValueDao;
+import com.hxl.common.pojo.TbMenus;
+import com.hxl.structure.mapper.CodeValueMapper;
+import com.hxl.structure.mapper.TbMenusMapper;
 import com.hxl.util.Constant;
-import com.hxl.util.MapUtil;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.ApplicationContext;
@@ -28,7 +29,9 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	 *
 	 */
 	@Autowired
-	public CodeValueDao codeValueDao;
+	public CodeValueMapper codeValueDao;
+	@Autowired
+	public TbMenusMapper tbMenusMapper;
 
 	/**
 	 * 关闭服务器时，清空application数据
@@ -49,8 +52,9 @@ public class ApplicationInit implements ServletContextListener,ApplicationContex
 	
 	public void setApplicationContext(ApplicationContext applicationContext)
 			throws BeansException {
-		//List<Map<Object, Object>> list = codeValueDao.initAllCodeValue();
-		//gloabJson = MapUtil.covertMaptoJson(list);
+		TbMenus TbMenus = tbMenusMapper.selectByPrimaryKey(3l);
+		List<Map<Object, Object>> list = codeValueDao.initAllCodeValue();
+		System.out.println(TbMenus.toString());
 
 		}
 	

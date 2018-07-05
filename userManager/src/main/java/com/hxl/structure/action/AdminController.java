@@ -73,6 +73,7 @@ public class AdminController {
 		}
 		
 		try{
+			System.out.println("测试jireb动态加载");
 			Subject subject = ShiroUtils.getSubject();
 			//md5加密
 			//password=DigestUtils.md5DigestAsHex(password.getBytes());

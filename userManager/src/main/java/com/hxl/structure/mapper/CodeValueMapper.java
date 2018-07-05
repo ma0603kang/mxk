@@ -3,7 +3,7 @@ package com.hxl.structure.mapper;
 import java.util.List;
 import java.util.Map;
 
-public interface CodeValueDao {
+public interface CodeValueMapper {
 	/**
 	 * @return
 	 * @Description:初始化码值列表

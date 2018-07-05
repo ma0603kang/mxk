@@ -24,7 +24,6 @@
 <body class="childrenBody" style="margin:1%">
 	<blockquote class="layui-elem-quote">
 		<p>欢迎使用信息发布后台系统！v1.0。</p>
-		<p>QQ交流群：<span style="color:red">473676340</span> 需要的加一下共同学习！</p>
 	</blockquote>
 	<fieldset class="layui-elem-field layui-field-title">
 	  <legend>信息统计</legend>
@@ -32,8 +31,8 @@
 	<div>
 		<table class="layui-table">
 		  <colgroup>
-		    <col width="150">
-		    <col width="200">
+		    <col width="100">
+		    <col width="100">
 		    <col>
 		  </colgroup>
 		  <thead>
