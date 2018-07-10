@@ -23,6 +23,7 @@
         <option name="ideModuleStorage">
           <map>
             <entry key="com.zeroturnaround.jrebel.FormatVersion" value="6.3.2" />
+            <entry key="com.zeroturnaround.jrebel.remoting.DeleteUnindexedFiles" value="true" />
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerPreviousEnabledSelection" value="instance" />
             <entry key="com.zeroturnaround.jrebel.remoting.ModuleRemoteServerSelection" value="instance" />
           </map>
