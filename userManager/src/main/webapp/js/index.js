@@ -53,7 +53,7 @@ layui.config({
 	//公告层
 	function showNotice(){
 		layer.open({
-	        type: 1,
+	        type: 0,
 	        title: "系统公告",
 	        closeBtn: false,
 	        area: '310px',

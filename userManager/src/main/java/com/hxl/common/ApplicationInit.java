@@ -21,11 +21,9 @@ import java.util.Map;
 @SuppressWarnings("SpringJavaInjectionPointsAutowiringInspection")
 @Component
 public class ApplicationInit implements ServletContextListener,ApplicationContextAware {
-
-	
-			/**
-	        *保存静态变量
-	        */
+	/**
+	*保存静态变量
+	*/
 	private static String gloabJson;
 	/**
 	 *
