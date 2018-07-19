@@ -23,13 +23,13 @@
 </head>
 <body class="childrenBody" style="margin:1%">
 	<blockquote class="layui-elem-quote">
-		<p>欢迎使用信息发布后台系统！v1.0。</p>
+		<p>首页面显示title</p>
 	</blockquote>
 	<fieldset class="layui-elem-field layui-field-title">
 	  <legend>信息统计</legend>
 	</fieldset>
 	<div>
-		<table class="layui-table">
+		<table class="layui-"table>
 		  <colgroup>
 		    <col width="100">
 		    <col width="100">
@@ -68,10 +68,7 @@
 	<fieldset class="layui-elem-field layui-field-title">
 	  <legend>网站用户性别占比</legend>
 	</fieldset>
-	<div id="info" style="width: 600px;height:400px;"></div>
-	<script type="text/javascript">
-        
-    </script>
+	<div id="info" style="width: 50%;height:400px;float: left"></div>
 		<div class="sysNotice col">
 			<blockquote class="layui-elem-quote title">系统基本参数</blockquote>
 			<table class="layui-table">
