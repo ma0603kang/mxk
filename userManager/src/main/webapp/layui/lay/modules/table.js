@@ -271,7 +271,7 @@ layui.define(['laytpl', 'laypage', 'layer', 'form'], function(exports){
     }
     
     //请求数据
-    that.pullData(that.page);
+    that.pullData(that.page,that.loading());
     that.events();
   };
   
